@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './display-tweet.component.css'
 })
 export class DisplayTweetComponent {
-  
+   test = "test";
 }
