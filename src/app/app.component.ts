@@ -5,6 +5,7 @@ import { FooterComponent } from "../footer/footer.component";
 import { October52024Component } from "./october-5-2024/october-5-2024.component";
 import { CommonModule } from '@angular/common';
 import { October62024Component } from "./october-6-2024/october-6-2024.component";
+import { October122024Component } from "./october-12-2024/october-12-2024.component";
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ import { October62024Component } from "./october-6-2024/october-6-2024.component
     CommonModule,
     HeaderComponent,
     FooterComponent,
-    October52024Component, October62024Component],
+    October52024Component, October62024Component, October122024Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -21,12 +22,21 @@ export class AppComponent {
   title = 'TakeEvansTwitterAway';
   October5Visibility:boolean = false;
   October6Visibility:boolean = false;
+  October12Visibility:boolean = false;
   onClickOctober5Visibility(){
     this.October5Visibility = !this.October5Visibility;
     this.October6Visibility = false;
+    this.October12Visibility = false;
   }
   onClickOctober6Visibility(){
     this.October5Visibility = false;
     this.October6Visibility = !this.October6Visibility;
+    this.October12Visibility = false;
+  }
+  onClickOctober12Visibility(){
+    this.October5Visibility = false;
+    this.October6Visibility = false;
+    this.October12Visibility = !this.October12Visibility;
+
   }
 }
