@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="card" *ngIf="LandingVisibility==true">
+    <div class="card">
       <h2 >Welcome To Evan's Monument To Bad Decisions</h2>
       <img class="card-img-top" src="..." alt=" ">
       <div class="card-body">
@@ -15,8 +15,11 @@
         <a class="btn btn-primary" href="https://bsky.app/profile/himedia.gg">Follow</a>
       </div>
     </div>
-    <button class="btn btn-primary" (click)="onClickOctober5Visibility()">10-5-2024 Session</button>
+
   </div>
+  <button class="btn btn-primary" (click)="onClickOctober5Visibility()">10-5-2024 Session</button>
+  <button class="btn btn-primary" (click)="onClickOctober6Visibility()">10-6-2024 Session</button>
   <app-october-5-2024 *ngIf="October5Visibility==true"></app-october-5-2024>
+  <app-october-6-2024 *ngIf="October6Visibility==true"></app-october-6-2024>
 </div>
 <app-footer></app-footer>
