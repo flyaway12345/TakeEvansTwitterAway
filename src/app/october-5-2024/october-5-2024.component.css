@@ -1,7 +1,5 @@
-.container{
-  margin-bottom: 10em;
-}
-.btn{
+
+.card{
   display:inline-block;
   margin: 0.5em;
   box-shadow: 5px 10px #888888;
